@@ -40,9 +40,6 @@ fun fizzBuzz() {
 > Результат выполнения — то что надо!. 
 {: .prompt-info } 
 
-> An example showing the `info` type prompt.
-{: .prompt-info }
-
 ```shell
 1
 2
