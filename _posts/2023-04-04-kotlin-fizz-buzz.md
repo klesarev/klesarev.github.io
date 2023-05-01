@@ -2,7 +2,7 @@
 title: Как написать FizzBuzz на Kotlin
 author: mr.fox
 date: 2023-04-04 14:10:00 +0800
-categories: [Kotlin, Leetcode]
+categories: [Kotlin]
 tags: [leetcode]
 render_with_liquid: false
 ---
@@ -19,7 +19,7 @@ render_with_liquid: false
 будет кратно 3, то вместо него вывести Fizz, а если число кратно пяти — слово Buzz. 
 При этом, если число будет кратно 15, то вывести строку Fizz Buzz». Напишем простое решение.
 
-```kotlin
+```{kotlin}
 fun fizzBuzz() {
     for (n in 1..100){
         if(n % 15 == 0) {
@@ -70,7 +70,7 @@ fun fizzBuzzWhen() {
 ```
 Мда… Читаемость стала хуже, и строчек прибавилось… Давайте перепишем нашу функцию, позаимствовав фичи из Java 8.
 
-```java
+```{java}
 fun fizzBuzzJava() = IntStream.rangeClosed(1, 100)
     .mapToObj { num: Int -> if (num % 3 == 0)
         if (num % 5 == 0) "Fizz Buzz = $num"
